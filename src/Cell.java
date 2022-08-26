@@ -6,6 +6,7 @@ public class Cell {
   // fields
   int x;
   int y;
+  int terrainId;
   static int size = 35;
 
   // constructors

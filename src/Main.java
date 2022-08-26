@@ -6,14 +6,14 @@ import javax.swing.JPanel;
 
 public class Main extends JFrame {
     class Canvas extends JPanel {
-      Grid grid = new Grid();
+      Arena arena = new Arena();
       public Canvas() {
         setPreferredSize(new Dimension(720, 720));
       }
 
       @Override
       public void paint(Graphics g) {
-        grid.paint(g, getMousePosition());
+        arena.paint(g, getMousePosition());
       }
     }
 
