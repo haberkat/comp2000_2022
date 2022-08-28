@@ -7,6 +7,10 @@ public class Cell {
   int x;
   int y;
   int terrainId;
+  String terrainType;
+  String crossingTime;
+  int movementCost;
+  Color color;
   static int size = 35;
 
   // constructors
@@ -20,7 +24,7 @@ public class Cell {
     if(contains(mousePos)) {
       g.setColor(Color.GRAY);
     } else {
-      g.setColor(Color.WHITE);
+      g.setColor(color);
     }
     g.fillRect(x, y, size, size);
     g.setColor(Color.BLACK);

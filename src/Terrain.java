@@ -12,8 +12,10 @@ public abstract class Terrain  {
 
         public void paint(Graphics g){
             for(Polygon p: cells){
-            g.setColor(color);
-            g.fillPolygon(p);
+             
+                g.setColor(color);
+            
+              g.fillPolygon(p);
             g.setColor(Color.BLACK);
             g.drawPolygon(p);
             }
